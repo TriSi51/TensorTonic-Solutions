@@ -9,3 +9,35 @@ Here you'll find my solutions to various machine learning and deep learning prob
 TensorTonic is a platform where you can implement core algorithms of Machine Learning from scratch.
 
 This repository contains my personal solutions to these problems, automatically synchronized from the platform.
+
+<!-- tensortonic:start -->
+# Ngo Tri Si's TensorTonic Solutions
+
+Verified machine learning implementations completed on [TensorTonic](https://www.tensortonic.com).
+
+<p align="center">
+  <img src="https://www.tensortonic.com/api/badge/ngotrisi2004.svg" alt="TensorTonic Verified Solutions" width="100%" />
+</p>
+
+| Problem | Description | Link |
+|---|---|---|
+| Bigram Probabilities (Add-1 Smoothing) | Estimate bigram probabilities from token sequences using add-one smoothing over a fixed vocabulary. | https://www.tensortonic.com/problems/bigram-probabilities |
+| Pad Sequences | Pad or truncate variable-length token ID sequences in NumPy with configurable maximum length and padding values. | https://www.tensortonic.com/problems/pad-sequences |
+| Apply Ranked BPE Merges | Apply learned byte-pair merge rules to UTF-8 byte IDs in their supplied priority order, then reconstruct text through the supplied vocabulary. | https://www.tensortonic.com/study-plans/language-modeling-from-scratch/cs336-l01-apply-bpe-merge-ranks |
+| Train a Deterministic BPE Vocabulary | Choose the highest count with a lexicographic byte-string tie break, assign the next token ID, and replace non-overlapping matches from left to right. | https://www.tensortonic.com/study-plans/language-modeling-from-scratch/cs336-l01-train-byte-pair-encoding |
+| Named-Dimension Batched Attention Scores | Compute batched multi-head query-key scores by contracting only the head-width dimension. | https://www.tensortonic.com/study-plans/language-modeling-from-scratch/cs336-l02-einsum-attention-scores |
+| Gradient Accumulation Equivalence | Combine mean-loss gradients from unequal microbatches into one full-batch mean gradient, then apply a single SGD update. | https://www.tensortonic.com/study-plans/language-modeling-from-scratch/cs336-l02-gradient-accumulation-step |
+| Transformer Training FLOP Estimator | Estimate one training step from forward matrix multiplications and a supplied forward attention cost. | https://www.tensortonic.com/study-plans/language-modeling-from-scratch/cs336-l02-training-flop-estimator |
+| Mixed-Precision Training Memory Accountant | Compute exact storage for parameters, gradients, saved activations, and optimizer state from tensor shapes and byte widths. | https://www.tensortonic.com/study-plans/language-modeling-from-scratch/cs336-l02-training-memory-accountant |
+| Causal Grouped-Query Attention | Compute causal scaled dot-product attention in which each contiguous group of query heads shares one key/value head. | https://www.tensortonic.com/study-plans/language-modeling-from-scratch/cs336-l03-causal-grouped-query-attention |
+| Parameter-Matched SwiGLU Block | Choose a parameter-matched SwiGLU hidden width under an available-width limit, then evaluate the bias-free block. | https://www.tensortonic.com/study-plans/language-modeling-from-scratch/cs336-l03-parameter-matched-swiglu |
+| RMSNorm Forward Pass | Normalize each final-dimension vector by its root mean square and apply the learned scale without mean subtraction. | https://www.tensortonic.com/study-plans/language-modeling-from-scratch/cs336-l03-rmsnorm-forward |
+| Rotary Query and Key Embeddings | Rotate each adjacent coordinate pair of query and key vectors by a position-dependent angle. | https://www.tensortonic.com/study-plans/language-modeling-from-scratch/cs336-l03-rotary-query-key-embeddings |
+| Gated DeltaNet State Update | Decay the recurrent state, erase its component along a unit key, write the new value, and read the just-updated state. | https://www.tensortonic.com/study-plans/language-modeling-from-scratch/cs336-l04-gated-deltanet-scan |
+| Parallel and Recurrent Linear Attention | Compute causal softmax-free linear attention through both a parallel formulation and a recurrent state scan. | https://www.tensortonic.com/study-plans/language-modeling-from-scratch/cs336-l04-linear-attention-duality |
+| Mamba 2 Gated State Scan | Apply a gated recurrent state update and read each output from the just-updated state. | https://www.tensortonic.com/study-plans/language-modeling-from-scratch/cs336-l04-mamba2-gated-state-scan |
+| Top-k MoE Router with Load Statistics | Route each token to its highest-scoring experts, combine selected outputs, add the shared expert, and report load statistics. | https://www.tensortonic.com/study-plans/language-modeling-from-scratch/cs336-l04-topk-moe-router |
+| GPU Occupancy Calculator | Calculate resident blocks, resident warps, and occupancy from one block's resource use and one SM's limits. | https://www.tensortonic.com/study-plans/language-modeling-from-scratch/cs336-l05-gpu-occupancy-calculator |
+
+View my verified ML profile: [TensorTonic profile](https://www.tensortonic.com/profile/ngotrisi2004)
+<!-- tensortonic:end -->
