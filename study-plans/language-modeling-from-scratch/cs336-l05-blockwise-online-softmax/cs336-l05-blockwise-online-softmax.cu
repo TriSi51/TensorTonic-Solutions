@@ -144,35 +144,35 @@ __global__ void online_softmax_kernel(
 
         __syncthreads();
 
-        // PHase 2:  write the softmax
-        for (int col = tid;
-            col < cols;
-            col += blockDim.x) {
 
-            long long input_idx = static_cast<long long>(row) * input_row_stride +
-                                  static_cast<long long>(col) * input_col_stride;
-
-            long long output_idx = static_cast<long long>(row) * output_row_stride +
-                                   static_cast<long long>(col) * output_col_stride;
-
-            float x = load_value(
-                input,
-                input_idx,
-                dtype_code
-            );
-
-
-            float y = expf(x-m) / l;
-
-            store_value(
-                output,
-                output_idx,
-                y,
-                dtype_code
-            );
-        }
     }
+    // PHase 2:  write the softmax
+    for (int col = tid;
+        col < cols;
+        col += blockDim.x) {
 
+        long long input_idx = static_cast<long long>(row) * input_row_stride +
+                              static_cast<long long>(col) * input_col_stride;
+
+        long long output_idx = static_cast<long long>(row) * output_row_stride +
+                               static_cast<long long>(col) * output_col_stride;
+
+        float x = load_value(
+            input,
+            input_idx,
+            dtype_code
+        );
+
+
+        float y = expf(x-m) / l;
+
+        store_value(
+            output,
+            output_idx,
+            y,
+            dtype_code
+        );
+    }
 }
 
 extern "C" void solve(
