@@ -3,14 +3,16 @@
 
 __global__ void sum_kernel(const float* input, float* result, int N) {
     int tid = threadIdx.x;
-    int i = blockIdx.x * blockDim.x + threadIdx.x;
 
-    float x = (i<N) ? input[i] : 0.0f;
     extern __shared__ float shared[];
 
     float* total_sum = shared;
-    
-    total_sum[tid]= x;
+    float sum = 0.0f;
+    for (int i = tid; i < N; i += blockDim.x) {
+        sum += input[i];
+        
+    }
+    total_sum[tid]= sum;
     __syncthreads();
     for (int stride = blockDim.x/2 ; stride > 0; stride >>=1){
         if (tid < stride) {
@@ -30,6 +32,6 @@ extern "C" void solve(const float* input, float* result, int N) {
     int blocks = (N + threads - 1) / threads;
     size_t shared_mems = threads * sizeof(float);
     cudaMemset(result, 0, sizeof(float));
-    sum_kernel<<<blocks, threads,shared_mems>>>(input, result, N);
+    sum_kernel<<<1, threads,shared_mems>>>(input, result, N);
     cudaDeviceSynchronize();
 }
