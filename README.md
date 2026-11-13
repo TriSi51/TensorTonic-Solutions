@@ -56,6 +56,7 @@ Verified machine learning implementations completed on [TensorTonic](https://www
 | Sigmoid Focal Loss | Implement mean binary sigmoid focal loss from raw logits with alpha balancing, gamma modulation, and stable probabilities. | https://www.tensortonic.com/problems/cv-focal-loss |
 | Image Normalize | Normalize each image channel by its supplied mean and standard deviation to produce standardized vision-model inputs. | https://www.tensortonic.com/problems/cv-image-normalize |
 | RGB to Grayscale | Convert an RGB image to grayscale with luminance-weighted color channels for classical computer vision preprocessing. | https://www.tensortonic.com/problems/cv-rgb-to-grayscale |
+| Reparameterized Gaussian Sample | Draw Gaussian samples with the reparameterization trick, writing each sample as a deterministic function of noise. | https://www.tensortonic.com/problems/diffusion-l01-reparameterized-gaussian-sample |
 | Activation Functions | Implement ReLU, sigmoid, tanh, Leaky ReLU, GELU, and Swish with their analytical derivatives. | https://www.tensortonic.com/problems/dl-activation-functions |
 | Perceptron | Train a binary perceptron from zero-initialized weights using ordered samples, step predictions, and error-correction updates. | https://www.tensortonic.com/problems/dl-perceptron |
 | Implement Dot Product | Implement the dot product of equal-length numeric vectors by summing element-wise products without library shortcuts. | https://www.tensortonic.com/problems/dot-product |
