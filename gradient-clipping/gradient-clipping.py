@@ -10,4 +10,4 @@ def clip_gradients(g: list, max_norm: float) -> np.ndarray:
     if float(g_norm) <= max_norm:
         return g
     else:
-        return g * max_norm / g_norm if float(g_norm) != 0.0 else 0.0
+        return g * max_norm / g_norm
