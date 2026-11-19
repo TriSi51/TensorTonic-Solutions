@@ -60,6 +60,7 @@ Verified machine learning implementations completed on [TensorTonic](https://www
 | Image Normalize | Normalize each image channel by its supplied mean and standard deviation to produce standardized vision-model inputs. | https://www.tensortonic.com/problems/cv-image-normalize |
 | RGB to Grayscale | Convert an RGB image to grayscale with luminance-weighted color channels for classical computer vision preprocessing. | https://www.tensortonic.com/problems/cv-rgb-to-grayscale |
 | Diagonal Gaussian KL Divergence | Compute the closed-form KL divergence between two diagonal Gaussians given means and log variances, as used in the DDPM bound. | https://www.tensortonic.com/problems/diffusion-l01-diagonal-gaussian-kl |
+| Gaussian Mixture Score | Compute the score of an isotropic Gaussian mixture with stable log-sum-exp responsibilities, the quantity diffusion models learn. | https://www.tensortonic.com/problems/diffusion-l01-gaussian-mixture-score |
 | Reparameterized Gaussian Sample | Draw Gaussian samples with the reparameterization trick, writing each sample as a deterministic function of noise. | https://www.tensortonic.com/problems/diffusion-l01-reparameterized-gaussian-sample |
 | Activation Functions | Implement ReLU, sigmoid, tanh, Leaky ReLU, GELU, and Swish with their analytical derivatives. | https://www.tensortonic.com/problems/dl-activation-functions |
 | Perceptron | Train a binary perceptron from zero-initialized weights using ordered samples, step predictions, and error-correction updates. | https://www.tensortonic.com/problems/dl-perceptron |
