@@ -65,6 +65,7 @@ Verified machine learning implementations completed on [TensorTonic](https://www
 | Cosine Noise Schedule | Implement the cosine noise schedule of improved DDPM in NumPy, with clipped betas and alpha_bars rebuilt from them. | https://www.tensortonic.com/problems/diffusion-l02-cosine-noise-schedule |
 | Forward Diffusion Sample | Implement the closed-form DDPM forward process that jumps a clean image straight to any noise level in one step. | https://www.tensortonic.com/problems/diffusion-l02-forward-diffusion-sample |
 | Linear Beta Schedule | Build the DDPM linear noise schedule in NumPy, returning the betas, alphas and cumulative alpha_bars for every timestep. | https://www.tensortonic.com/problems/diffusion-l02-linear-beta-schedule |
+| Rescale to Zero Terminal SNR | Rescale a diffusion noise schedule in NumPy so its last timestep has zero signal to noise ratio, as in Lin et al. (2024). | https://www.tensortonic.com/problems/diffusion-l02-zero-terminal-snr-rescale |
 | Activation Functions | Implement ReLU, sigmoid, tanh, Leaky ReLU, GELU, and Swish with their analytical derivatives. | https://www.tensortonic.com/problems/dl-activation-functions |
 | Perceptron | Train a binary perceptron from zero-initialized weights using ordered samples, step predictions, and error-correction updates. | https://www.tensortonic.com/problems/dl-perceptron |
 | Implement Dot Product | Implement the dot product of equal-length numeric vectors by summing element-wise products without library shortcuts. | https://www.tensortonic.com/problems/dot-product |
